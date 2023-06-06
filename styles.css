@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=DM+Sans:ital,wght@0,400;0,500;1,400;1,500&family=Delius+Unicase:wght@400;700&family=Inter:wght@200;300;400;500;600;700;800&family=Lilita+One&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --navbar: #6f6af7;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--navbar);
+  justify-content: space-around;
+  position:fixed;
+  width: 100vw;
+
+}
+.logo h1 {
+  font-family: 'Delius Unicase';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 61.43px;
+  line-height: 79px;
+  color: #ffffff;
+}
+
+.lists {
+  & ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36.43px;
+    line-height: 47px;
+    color: #ffffff;
+    & input {
+      background: #ffffff;
+      border-radius: 63px;
+      
+      width: 314px;
+      height: 57px;
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24.43px;
+      line-height: 32px;
+      
+      background-image: url('assets/Vectorsearch.png');
+      background-position-y: center;
+      background-position-x: 95%;
+      background-repeat: no-repeat;
+      background-size: 26px
+    }
+    & input[type='text']::placeholder {
+      padding-left: 2.5vh;
+    }
+    & li {
+      margin: 1vh;
+      padding: 1vh;
+    }
+  }
+}
+#downArrowNB {
+  padding-bottom: 0.2rem;
+  padding-left: 0.2rem;
+  width: 14px;
+  height: 8px;
+}
+.hamburger {
+  & img {
+    width: 67px;
+    height: 48px;
+    margin-top: 3vh;
+  }
+}
+
+.homepage{
+    height: 180vh;
+}
